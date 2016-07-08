@@ -26,7 +26,6 @@ public class Producer implements Runnable {
 		taskQueue.add(i);
 		System.out.println("Produced: " + i);
 		condition.signalAll();
-
 	}
 
 	public void run() {

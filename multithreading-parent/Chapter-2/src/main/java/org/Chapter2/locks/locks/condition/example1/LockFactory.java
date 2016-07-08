@@ -8,6 +8,7 @@ public class LockFactory {
 	
 	private static Lock lock = new ReentrantLock();
 	private static Condition condition = lock.newCondition();
+	
 	public static Lock getLock(){
 		return lock;
 	}

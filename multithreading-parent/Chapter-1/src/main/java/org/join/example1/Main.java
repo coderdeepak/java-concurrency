@@ -1,5 +1,7 @@
 package org.join.example1;
 
+import java.util.ArrayList;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -38,9 +40,12 @@ public class Main {
 	        }
 	        
 	        System.out.println("All threads are dead, exiting main thread");
+	        ArrayList l = new ArrayList();
+	        
 	    }
 
-
+		
+		
 	}
 
 

@@ -7,6 +7,7 @@ public class Task implements Runnable {
 	
 	private int count;
 	Lock lock = new ReentrantLock();
+	
 	public void run() {
 		System.out.println("Thread "+ Thread.currentThread().getName() +" is being executed");
 		try {

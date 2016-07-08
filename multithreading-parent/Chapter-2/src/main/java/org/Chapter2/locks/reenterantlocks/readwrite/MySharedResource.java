@@ -27,6 +27,12 @@ public class MySharedResource<K,V> {
 	public V get(K key){
 		readLock.lock();
 		System.out.println(" Inside get accquired read lock");
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		try{
 			return hashMap.get(key);
 		}finally{
